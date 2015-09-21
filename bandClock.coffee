@@ -42,6 +42,7 @@ Built on top of the jQuery library (http://jquery.com)
         height: @options.size
         lineHeight: "#{@options.size}px"
         })
+<<<<<<< HEAD
       @ctx.fillStyle = @options.backgroundColor
       @ctx.fillRect 0, 0, @options.size, @options.size
 
@@ -51,6 +52,70 @@ Built on top of the jQuery library (http://jquery.com)
   $.bandClock.defaultOptions =
       size: 300
       backgroundColor: 'rgba(0,0,0, 0.2)'
+=======
+      _x = @options.size/2
+      @ctx.translate _x, _x
+      @ctx.shadowBlur = 2;
+      @ctx.shadowColor = @options.color
+      @
+
+    degToRed = (degree)->
+      factor = Math.PI / 180
+      degree * factor
+        
+    renderTime = =>
+      _x = @options.size/2
+      _g = @options.gap
+      _r = _x - (@options.lineWidth + 2)
+      _r1 = _r - (_g + @options.lineWidth)
+      _r2 = _r1 - (_g + @options.lineWidth)
+      @ctx.fillStyle = @options.bgColor
+      @ctx.fillRect -_x, -_x, @options.size, @options.size
+      @ctx.strokeStyle = @options.color
+      @ctx.lineWidth = @options.lineWidth
+      @ctx.lineCap = @options.lineCap
+
+      now = new Date()
+      hours = now.getHours();
+      minutes = now.getMinutes();
+      seconds = now.getSeconds();
+      milliseconds = now.getMilliseconds();
+      newSeconds = seconds + (milliseconds / 1000);
+      time = now.toLocaleTimeString();
+
+      #Hours
+      @ctx.beginPath()
+      @ctx.arc(0, 0, _r, degToRed(270), degToRed((hours * 30) - 90))
+      @ctx.stroke()
+      #Minutes
+      @ctx.beginPath()
+      @ctx.arc(0, 0, _r1, degToRed(270), degToRed((minutes * 6) - 90))
+      @ctx.stroke()
+      #Seconds
+      @ctx.beginPath()
+      @ctx.arc(0, 0, _r2, degToRed(270), degToRed((newSeconds * 6) - 90))
+      @ctx.stroke()
+
+      #Time
+      @ctx.font = _this.options.fontStyle
+      @ctx.fillStyle = _this.options.color
+      @ctx.textAlign = "center"
+      @ctx.fillText(time, 0, 0)
+      @
+
+    setInterval renderTime, 40
+    @init()
+
+  $.bandClock.defaultOptions =
+    size : 300
+    color: '#18FFFF'
+    bgColor: '#212121'
+    lineWidth: 10
+    lineCap: 'butt'
+    gap: 5
+    fontStyle: '20px Verdana'
+    
+>>>>>>> origin/gh-pages
 
 
 

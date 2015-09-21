@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Circular BandClock</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <style>
+    .wrap {
+      max-width: 500px;
+      min-height: 500px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+    .bandClock {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+    }
+    hr {
+      border-top: 5px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Circular Band Clock Example</h1>
+    <hr>
+    <div class="bandClock"></div>
+
+    <script src="../bandClock.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.bandClock').bandClock({
+          //configure here
+          // size: 400,
+          // bgColor: ,
+          // color: ,
+          //  bandWidth:  ,
+          // lineCap: ,
+          // bandspacing: ,
+          // fontStyle:
+        });
+      });
+    </script>
+  </div>
+</body>
+</html>
