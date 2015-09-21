@@ -65,8 +65,6 @@ Built on top of the jQuery library (http://jquery.com)
        _this.ctx.strokeStyle = _this.options.color;
        _this.ctx.lineWidth = _this.options.bandWidth;
        _this.ctx.lineCap = _this.options.lineCap;
-       // _this.ctx.shadowBlur = 2;
-       // _this.ctx.shadowColor = _this.options.color;
 
        var now = new Date();
        var hours = now.getHours();
