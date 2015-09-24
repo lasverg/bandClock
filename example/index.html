@@ -9,12 +9,10 @@
     body {
       font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
       font-size: 14px;
-      color: #FFF;
-      background-color: #212121;
+      /*color: #FFF;*/
     }
     .wrap {
-      max-width: 500px;
-      min-height: 500px;
+      max-width: 700px;
       margin-right: auto;
       margin-left: auto;
       text-align: center;
@@ -27,6 +25,34 @@
     hr {
       border-top: 5px solid #eee;
     }
+    ul {
+      margin: 60px 0 0 0;
+      padding: 0;
+      list-style: none;
+      background-color: #fff;
+      border-radius: 5px;
+      }
+      ul li {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+      }
+      ul li a {
+        margin: 0;
+        color: #000;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;
+        padding: 20px 10px;
+        border-radius: 5px;
+        border: 2px solid #455A64;
+      }
+        ul li a:hover {
+          background-color: #B0BEC5;
+          text-decoration: none;
+          color: #fff;
+        }
+
   </style>
 </head>
 <body>
@@ -35,14 +61,23 @@
     <hr>
     <div class="bandClock"></div>
 
+
+    <div class="nav">
+      <ul>
+        <li><a href="https://github.com/zaniitiin/bandClock">View Project On Github</a></li>
+        <li><a href="https://github.com/zaniitiin/bandClock.git">Clone this Project</a></li>
+        <li><a href="https://github.com/zaniitiin/bandClock/archive/master.zip">Download Source File</a></li>
+      </ul>
+    </div>
+
     <script src="../bandClock.min.js"></script>
     <script>
       $(document).ready(function() {
         $('.bandClock').bandClock({
           //configure here
-          // size: 400,
-          // bgColor: ,
-          // color:  ,
+          // size: 250,
+          bgColor: '#FFF',
+          color: '#AD1457' ,
           // lineWidth:  ,
           // lineCap: ,
           // gap: ,
