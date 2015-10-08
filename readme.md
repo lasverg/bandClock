@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # BandClock
 
 > Lightweight plugin to render simple, retina optimized dynamic clock
@@ -174,4 +173,3 @@ Native support
 
 ## Copyright
 Copyright (c) 2015 Nitin Jha, contributors. Released under the MIT, GPL licenses.
->>>>>>> origin/master
