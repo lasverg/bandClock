@@ -14,7 +14,7 @@
 
 ## Get Started
 
-To use the band clock plugin you need to load the current version of jQuery (> 1.6.4)
+To use the band clock plugin you need to load the current version of jQuery (> 1.6.4) and the source of the plugin.
 
 ```html
 <div class="clock"></div>
@@ -40,7 +40,7 @@ You can pass these options to set a custom look and feel for the plugin.
   <tr>
     <td><strong>size</strong></td>
     <td>300</td>
-    <td>Size of the clock in px. It will always be in a square</td>
+    <td>Size of the clock in px. It will always be in a square.</td>
   </tr>
   <tr>
     <td><strong>color</strong></td>
@@ -50,17 +50,17 @@ You can pass these options to set a custom look and feel for the plugin.
   <tr>
     <td><strong>bgColor</strong></td>
     <td>#212121</td>
-    <td>The background color for disable rendering</td>
+    <td>The background color for disable rendering.</td>
   </tr>
   <tr>
     <td><strong>lineWidth</strong></td>
     <td>10</td>
-    <td>Thickness of circular band line in px</td>
+    <td>Thickness of circular band line in px.</td>
   </tr>
   <tr>
     <td><strong>lineCap</strong></td>
     <td>butt</td>
-    <td>defines how the edge of the band line looks like,. posible values are : <code>butt</code>, <code>round</code> and <code>square</code> </td>
+    <td>defines how the edge of the band line looks like,. posible values are : <code>butt</code>, <code>round</code> and <code>square</code>.</td>
   </tr>
   <tr>
     <td><strong>gap</strong></td>
@@ -70,7 +70,7 @@ You can pass these options to set a custom look and feel for the plugin.
   <tr>
     <td><strong>fontStyle</strong></td>
     <td>20 Verdana</td>
-    <td>Defines font-size and font-family of the center time display</td>
+    <td>Defines font-size and font-family of the center time display.</td>
   </tr>
 </table>
 
