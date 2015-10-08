@@ -172,4 +172,5 @@ Native support
 * Internet Explorer 9+
 
 ## Copyright
+
 Copyright (c) 2015 Nitin Jha, contributors. Released under the MIT, GPL licenses.
