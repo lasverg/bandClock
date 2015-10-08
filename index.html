@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="BandClock">
+    <meta content="JQuery Plugin">
+    <meta content="Cenvas Clock">
+    <title>BandClock | JQuery Plugin</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="wraper">
+        <!--HEADER-->
+        <header class="header">
+            <h1>BandClock</h1>
+            <p>Lightweight jQuery plugin to display nice dynamic clock with the HTML5 canvas element.</p>
+            <p class="view">
+                <a href="https://github.com/zaniitiin/bandClock">View the Project on Github</a><br>
+                <small>zaniitiin/bandClock</small>
+            </p>
+            <ul>
+                <li><a href="https://github.com/zaniitiin/bandClock/archive/1.0.zip">Download<strong>ZIP File</strong></a></li>
+                <li><a href="https://github.com/zaniitiin/bandClock/archive/1.0.zip">Download<strong>TAR Ball</strong></a></li>
+                <li><a href="https://github.com/zaniitiin/bandClock">View on<strong>Github</strong></a></li>
+            </ul>
+        </header>
+        <!--SECTION-->
+        <section>
+            <h1>bandClock</h1>
+            <p>BandClock is a jQuery plugin that uses the canvas element to dynamic circular bandClock. This clock is highly customizable, very easy to implement.</p>
+               
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="bclock"></div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="wclock"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h2>Browser support</h2>
+            <p>This plugin supports all major browsers that support the canvas element. With excanvas you can even render the charts on IE 7+8.</p>
+            <h2>Get started</h2>
+            <p>To use the easy pie chart plugin you need to load the current version of jQuery and the source script (js) file of the plugin.</p>
+            
+            <p>Then just add the following lines to head in to your website.</p>
+            <div class="wrap">
+               <code>
+                    &lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"&gt;&lt;/script&gt; <br>
+                    &lt;script type="text/javascript" src="/path/to/bandClock.js"&gt;&lt;/script&gt;
+                </code>
+            </div>
+            <p>Now just add then element in your website to represent clock.</p>
+            <div class="wrap"><code>
+                &lt;div class="clock"&gt;&lt;/div&gt;
+            </code></div>
+            
+            <p>Finally you have to initialize the plugin with your desired configuration:</p>
+            <div class="wrap"><code>
+                &lt;script type="text/javascript"&gt;<br>
+                $(function() {<br>
+                    $('.clock').bandClock({<br>
+                        //your configuration goes here <br>   
+                    });<br>
+                });
+&lt;/script&gt;
+            </code></div>
+            
+            <h2>Configuration Properties</h2>
+            <p>You can pass a set of these options to the initialize function to set a custom behaviour and look for the plugin.</p>
+            <table class="table">
+              <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td><strong>size</strong></td>
+                <td>300</td>
+                <td>Size of the clock in px. It will always be in a .</td>
+              </tr>
+              <tr>
+                <td><strong>color</strong></td>
+                <td>#18FFFF</td>
+                <td>The color of circular band of clock. You can either pass a valid css color string.</td>
+              </tr>
+              <tr>
+                <td><strong>bgColor</strong></td>
+                <td>#212121</td>
+                <td>The background color for disable rendering.</td>
+              </tr>
+              <tr>
+                <td><strong>lineWidth</strong></td>
+                <td>10</td>
+                <td>Thickness of circular band line in px.</td>
+              </tr>
+              <tr>
+                <td><strong>lineCap</strong></td>
+                <td>butt</td>
+                <td>defines how the edge of the band line looks like,. posible values are : <code>butt</code>, <code>round</code> and <code>square</code> </td>
+              </tr>
+              <tr>
+                <td><strong>gap</strong></td>
+                <td>5</td>
+                <td>Distance between band line of hours, minutes, seconds in px.</td>
+              </tr>
+              <tr>
+                <td><strong>fontStyle</strong></td>
+                <td>20 Verdana</td>
+                <td>Defines font-size and font-family of the center time display</td>
+              </tr>
+            </table>
+            
+            <h3>version release 1.0</h3>
+            
+        </section>
+        <footer>
+            <p>This project is maintained by <a href="https://github.com/zaniitiin">zaniitiin</a></p>
+        </footer>
+    </div>
+    <script src="script/jquery.min.js"></script>
+    <script src="script/bandClock.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
