@@ -3,6 +3,8 @@
 > Lightweight plugin to render simple, retina optimized dynamic clock
 
 ## Freature
+![](https://raw.githubusercontent.com/zaniitiin/bandClock/master/example/demo.png)
+
 
 * Highly customizable
 * Very easy to you
