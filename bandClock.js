@@ -13,6 +13,15 @@ Built on top of the jQuery library (http://jquery.com)
  */
 (function($) {
   $.bandClock = function(el, options) {
+     var defaultOptions = {
+       size: 300,
+       color: '#18FFFF',
+       bgColor: '#212121',
+       lineWidth: 10,
+       lineCap: 'butt',
+       gap: 5,
+       fontStyle: '20px Verdana'
+     };
     var degToRed, renderTime;
     this.el = el;
     this.$el = $(el);
