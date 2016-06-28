@@ -23,6 +23,8 @@ To use the band clock plugin you need to load the current version of jQuery (> 1
 ```html
 $ bower install bandClock
 ```
+###You can also install and manage BandClock using Bower:
+
 
 ```html
 <div class="clock"></div>
