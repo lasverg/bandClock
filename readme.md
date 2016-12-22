@@ -82,6 +82,9 @@ You can pass these options to set a custom look and feel for the plugin.
   </tr>
 </table>
 
+## Test
+To run the test just use the karma adapter of grunt: `grunt test`
+
 ## Browser Support
 Native support
 
