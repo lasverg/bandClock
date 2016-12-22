@@ -1,26 +1,32 @@
 {
-  "name": "bandClock",
-  "main": "bandClock.js",
-  "homepage": "https://github.com/zaniitiin/bandClock",
-  "authors": [
-    "Nitin Jha <zaniitiin@gmail.com>"
-  ],
-  "description": "jQuery plugin to render simple, retina optimized dynamic clock",
-  "keywords": [
-    "bandClock",
-    "bower",
-    "jQuery",
-    "Plugin"
-  ],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "jquery": "^2.0.0"
-  }
+    "name": "bandClock",
+    "main": "bandClock.js",
+    "homepage": "https://github.com/zaniitiin/bandClock",
+    "authors": [
+        "Nitin Jha <zaniitiin@gmail.com>"
+    ],
+    "description": "jQuery plugin to render simple, retina optimized dynamic clock",
+    "keywords": [
+        "bandClock",
+        "bower",
+        "jQuery",
+        "Plugin"
+    ],
+    "license": [{
+        "type": "MIT",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+    }, {
+        "type": "GPL",
+        "url": "http://www.opensource.org/licenses/gpl-license.php"
+    }],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "~1.9.0"
+    }
 }
