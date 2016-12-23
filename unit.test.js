@@ -44,18 +44,18 @@ describe('Unit testing bandClock', function() {
 		var $canvas;
 		beforeEach(createInstance({
 			size: 200
-		}, '<span class="chart" data-size="500"></span>'));
+		}, '<span class="chart" data-size="400"></span>'));
 
 		beforeEach(function() {
 			$canvas = $el.find('canvas');
 		});
 
 		it('overwrite width', function() {
-			expect($canvas.width()).toBe(500);
+			expect($canvas.width()).toBe(400);
 		});
 
 		it('overwrite height', function() {
-			expect($canvas.height()).toBe(500);
+			expect($canvas.height()).toBe(400);
 		});
 	});
 
