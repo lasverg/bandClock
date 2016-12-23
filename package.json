@@ -1,5 +1,5 @@
 {
-    "name": "bandclock",
+    "name": "bandClock",
     "version": "1.0.0",
     "description": "Lightweight plugin to render simple, retina optimized dynamic clock",
     "main": "bandClock.js",
